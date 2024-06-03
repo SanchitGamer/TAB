@@ -1,0 +1,19 @@
+default:
+  tabprefix: "&e&lPLAYER &f"
+  tagprefix: "&e&lPLAYER &f"
+admin:
+  tabprefix: '%animation:admin% &b'
+  tagprefix: '%animation:admin% &b'
+developer:
+  tabprefix: '%animation:dev_logo% &6'
+  tagprefix: '%animation:dev_logo% &6'
+owner:
+  tabprefix: '%animation:owner% &b'
+  tagprefix: '%animation:owner% &b'
+_DEFAULT_:
+  tabprefix: '%luckperms-prefix%'
+  tagprefix: '%luckperms-prefix%'
+  tagsuffix: ' %betterteams_color%%betterTeams_name%'
+  customtabname: '%player% %betterteams_color%%betterTeams_name%'
+  customtagname: '%player% %betterteams_color%%betterTeams_name%'
+  #tabsuffix: ' &b%betterTeams_name%'

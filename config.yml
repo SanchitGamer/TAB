@@ -1,0 +1,205 @@
+# https://github.com/NEZNAMY/TAB/wiki/Feature-guide:-Header-&-Footer
+header-footer:
+  enabled: true
+  header:
+  - ' &#08FB2E&lH&#23F52C&lo&#3EF02B&lr&#59EA29&li&#74E427&lz&#8FDE25&li&#AAD924&lo&#C5D322&ln &#D5C91F&lS&#DBBA1A&lu&#E1AC16&lr&#E79D12&lv&#ED8F0D&li&#F38009&lv&#F97204&la&#FF6300&ll '
+  - ''
+  - '&#3494E6&l✧&#3B93E4&l-&#4291E2&l-&#4890E0&l-&#4F8EDE&l-&#568DDB&l-&#5D8CD9&l-&#648AD7&l-&#6B89D5&l-&#7187D3&l-&#7886D1&l-&#7F85CF&l-&#8683CD&l-&#8D82CB&l-&#9380C8&l-&#9A7FC6&l-&#A17DC4&l-&#A87CC2&l-&#AF7BC0&l-&#B579BE&l-&#BC78BC&l-&#C376BA&l-&#CA75B8&l-&#D174B5&l-&#D872B3&l-&#DE71B1&l-&#E56FAF&l-&#EC6EAD&l✧'
+  - ' &#3494E6&lW&#538EDD&le&#7187D3&ll&#9081CA&lc&#AF7BC0&lo&#CD74B7&lm&#EC6EAD&le
+    &b&n%player_name%'
+  - ''
+  footer:
+  - ''
+  - '&bPing: &2&n%ping%&r &ams &e| &bTPS: &2%tps% &e| &bOnline: &2%online%'
+  - '&#3494E6&l✧&#3B93E4&l-&#4291E2&l-&#4890E0&l-&#4F8EDE&l-&#568DDB&l-&#5D8CD9&l-&#648AD7&l-&#6B89D5&l-&#7187D3&l-&#7886D1&l-&#7F85CF&l-&#8683CD&l-&#8D82CB&l-&#9380C8&l-&#9A7FC6&l-&#A17DC4&l-&#A87CC2&l-&#AF7BC0&l-&#B579BE&l-&#BC78BC&l-&#C376BA&l-&#CA75B8&l-&#D174B5&l-&#D872B3&l-&#DE71B1&l-&#E56FAF&l-&#EC6EAD&l✧'
+  disable-condition: '%world%=disabledworld'
+
+tablist-name-formatting:
+  enabled: true
+  anti-override: true
+  disable-condition: '%world%=disabledworld'
+scoreboard-teams:
+  enabled: true
+  enable-collision: true
+  invisible-nametags: false
+  anti-override: true
+  sorting-types:
+  - GROUPS:owner,admin,developer,mod,helper,jr-helper,default
+  - PLACEHOLDER_A_TO_Z:%player%
+  case-sensitive-sorting: true
+  can-see-friendly-invisibles: false
+  disable-condition: '%world%=disabledworld'
+  unlimited-nametag-mode:
+    enabled: false
+    disable-on-boats: true
+    disable-condition: '%world%=disabledworld'
+    dynamic-lines:
+    - abovename
+    - nametag
+    - belowname
+    - another
+    static-lines:
+      myCustomLine: 0.66
+belowname-objective:
+  enabled: false
+  number: '%health%'
+  text: '&c❤'
+  disable-condition: '%world%=disabledworld'
+  fancy-display-default: NPC
+  fancy-display-players: '&c%health%'
+prevent-spectator-effect:
+  enabled: true
+bossbar:
+  enabled: false
+  toggle-command: /bossbar
+  remember-toggle-choice: false
+  hidden-by-default: false
+  bars:
+    ServerInfo:
+      style: PROGRESS
+      color: '%animation:barcolors%'
+      progress: '100'
+      text: '&fWebsite: &bwww.domain.com'
+scoreboard:
+  enabled: true
+  toggle-command: /sb
+  remember-toggle-choice: false
+  hidden-by-default: false
+  use-numbers: false
+  static-number: 0
+  delay-on-join-milliseconds: 0
+  respect-other-plugins: true
+  teamName: "&cNo Team"
+  scoreboards:
+    default:
+      title: '&#08FB2E&lH&#23F52C&lo&#3EF02B&lr&#59EA29&li&#74E427&lz&#8FDE25&li&#AAD924&lo&#C5D322&ln &#D5C91F&lS&#DBBA1A&lu&#E1AC16&lr&#E79D12&lv&#ED8F0D&li&#F38009&lv&#F97204&la&#FF6300&ll'
+      lines:
+      - "  &7%localtime_timezone_IST%"
+      - ""
+      - " &e%player_name%"
+      - "&6🌟 &8● &fRank: %vault_prefix% "
+      - "&2💰 &8● &fMoney: &2$&a%vault_eco_balance_formatted%"
+      - "&c⚔ &8● &fKills: &c%statistic_player_kills%"
+      - "&b🤝 &8● &fTeam: &b&n%betterTeams_name%"
+      - ""
+      - "  &eSurvival Info"
+      - "&6🎉 &8● &fVote Party: &6%pinataparty_votes_left%&7/&6%pinataparty_votes_needed%"
+      - "&d🔒 &8● &fClaim Blocks: &d%griefprevention_remainingclaims%"
+      - "&b👥 &8● &fPlayers: &b%online%"
+      - ""
+      - "  &eplay.horizion.in"
+
+layout:
+  enabled: false
+  direction: COLUMNS
+  default-skin: mineskin:1753261242
+  enable-remaining-players-text: true
+  remaining-players-text: '... and %s more'
+  empty-slot-ping-value: 1000
+  layouts:
+    default:
+      fixed-slots:
+      - '1|&3Website&f:'
+      - 2|&bmyserver.net
+      - '3|&8&m                       '
+      - '4|&3Name&f:'
+      - 5|&b%player%
+      - '7|&3Rank&f:'
+      - '8|Rank: %group%'
+      - '10|&3World&f:'
+      - 11|&b%world%
+      - '13|&3Time&f:'
+      - 14|&b%time%
+      - '21|&3Teamspeak&f:'
+      - 22|&bts.myserver.net
+      - '23|&8&m                       '
+      - '41|&3Store&f:'
+      - 42|&bshop.myserver.net
+      - '43|&8&m                       '
+      groups:
+        staff:
+          condition: permission:tab.staff
+          slots:
+          - 24-40
+        players:
+          slots:
+          - 44-80
+placeholders:
+  date-format: dd.MM.yyyy
+  time-format: '[HH:mm:ss / h:mm a]'
+  time-offset: 0
+  register-tab-expansion: false
+placeholder-output-replacements:
+  '%essentials_vanished%':
+    'yes': '&7| Vanished'
+    'no': ''
+  '%essentials_nickname%':
+    '%essentials_nickname%': '%essentials_nickname%'
+conditions:
+  nick:
+    conditions:
+    - '%player%=%essentials_nickname%'
+    false: '%player%'
+    true: ~%essentials_nickname%
+placeholderapi-refresh-intervals:
+  default-refresh-interval: 500
+  '%server_uptime%': 1000
+  '%server_tps_1_colored%': 1000
+  '%server_unique_joins%': 5000
+  '%player_health%': 200
+  '%player_ping%': 1000
+  '%vault_prefix%': 1000
+  '%rel_factionsuuid_relation_color%': 1000
+assign-groups-by-permissions: false
+primary-group-finding-list:
+- Owner
+- Admin
+- Mod
+- Helper
+- default
+debug: false
+mysql:
+  enabled: false
+  host: 127.0.0.1
+  port: 3306
+  database: tab
+  username: user
+  password: password
+per-world-playerlist:
+  enabled: false
+  allow-bypass-permission: false
+  ignore-effect-in-worlds:
+  - ignoredworld
+  - build
+  shared-playerlist-world-groups:
+    lobby:
+    - lobby1
+    - lobby2
+    minigames:
+    - paintball
+    - bedwars
+global-playerlist:
+  enabled: false
+  display-others-as-spectators: false
+  display-vanished-players-as-spectators: false
+  isolate-unlisted-servers: false
+  spy-servers:
+  - spyserver1
+  - spyserver2
+  server-groups:
+    lobbies:
+    - lobby1
+    - lobby2
+    group2:
+    - server1
+    - server2
+use-bukkit-permissions-manager: false
+use-online-uuid-in-tablist: true
+permission-refresh-interval: 1000
+playerlist-objective:
+  enabled: true
+  value: '%ping%'
+  disable-condition: '%world%=disabledworld'
+  fancy-value: '&7Ping: %ping%'
+ping-spoof:
+  enabled: false
